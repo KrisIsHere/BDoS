@@ -56,7 +56,7 @@ print random.choice(ascii)
 def lan():
 	loop = True
 	while loop == True:
-		lol = raw_input("Please select your language \033[92;40m(\033[0;33men\033[92;40m/\033[0;33mbg\033[92;40m)\x1b[1;97m: ")
+		lol = raw_input("Please select your language \033[0;33m(\033[0;33mbg\x1b[1;97m/\033[0;33men)\33[37m: ")
 		if lol == "bg":
 		    os.system("mkdir .info")
 		    os.system("touch .info/bg.py")
